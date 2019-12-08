@@ -1,0 +1,21 @@
+---
+title: "tidyverse-1"
+author: "Actify Data Labs"
+date: "12/8/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+We will be working with the gapminder dataset for this lecture
+```{r}
+library(gapminder)
+
+head(gapmider)
+```
+
+
+
