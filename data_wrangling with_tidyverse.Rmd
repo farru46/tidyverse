@@ -3,6 +3,11 @@ title: "tidyverse-1"
 author: "Actify Data Labs"
 date: "12/8/2019"
 output: html_document
+knit: (function(input_file, encoding) {
+  out_dir <- 'docs';
+  rmarkdown::render(input_file,
+ encoding=encoding,
+ output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
 ---
 
 ```{r setup, include=FALSE}
@@ -14,7 +19,7 @@ We will be working with the gapminder dataset for this lecture
 ```{r}
 library(gapminder)
 
-head(gapmider)
+head(gapminder)
 ```
 
 
